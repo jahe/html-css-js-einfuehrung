@@ -1,0 +1,337 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Printing and PDF exports -->
+    <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-markdown>
+                <script type="text/template">
+                    # HTML - CSS - JS
+                    Hypertext Markup Language - Cascading Stylesheets - JavaScript
+                </script>
+            </section>
+            <section>
+            	<div data-markdown>
+                <script type="text/template">
+                    # HTML
+                    HTML ist eine Sprache mit der man den Inhalt einer Webseite beschreibt.
+                    ```html
+                    <!DOCTYPE html>
+                    <html>
+                    	<head>
+                    		<title>Name der Webseite</title>
+                    	</head>
+                    	<body>
+                    		<h1>Große Überschrift</h1>
+                    		<p>Text in einem Absatz</p>
+                    		<img src="bild.jpg">
+                    	</body>
+                    </html>
+                    ```
+                </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Elemente
+	            	Der Inhalt einer Webseite ergibt sich aus dem Zusammensetzen von Elementen wie z.B. Text, Listen und Bildern.
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# HTML Tags
+	            	Die Elemente einer Webseite werden mit sogenannten **Tags** beschrieben.
+	            	Ein Element besteht immer aus einem öffnenden und einem schließenden **Tag**. Dazwischen befindet sich der Inhalt.
+	            	```html
+	            	<h1>Dies ist eine große Überschrift</h1>
+	            	```
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# HTML Attribute
+	            	Mit Attributen können die Eigenschaften eines Elements angepasst werden. Zum Beispiel kann damit das Ziel eines Links beschrieben werden:
+	            	```html
+	            	<a href="http://de.wikipedia.org">Link zur Wikipedia</a>
+	            	```
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Arten von Elementen
+	            	* Einfache Elemente - Text, Überschriften, Bilder
+	            	* Eingabeelemente - Textfelder, Checkboxen, Buttons
+	            	* Container Elemente, die mehrere Elemente beinhalten können - Listen, Formulare, Blöcke
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Überschrift
+	            	```html
+	            	<h1>Sehr große Überschrift</h1>
+	            	<h6>Sehr kleine Überschrift</h6>
+	            	```
+	            	<h1>Sehr große Überschrift</h1>
+	            	<h6>Sehr kleine Überschrift</h6>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Textabsatz
+	            	```html
+	            	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+	            	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+	            	```
+	            	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+	            	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Link
+	            	```html
+	            	<a href="http://de.wikipedia.org">Link zur Wikipedia</a>
+	            	```
+	            	<a href="http://de.wikipedia.org">Link zur Wikipedia</a>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Bild
+	            	```html
+	            	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/CTB-CTW_Port_of_Hamburg-Waltershof.jpg">
+	            	```
+	            	<img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/CTB-CTW_Port_of_Hamburg-Waltershof.jpg">
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Eingabeelemente
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Textfeld
+	            	```html
+	            	<input type="text" placeholder="Beispieltext">
+	            	```
+	            	<input type="text" placeholder="Beispieltext">
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Passwortfeld
+	            	```html
+	            	<input type="password" placeholder="Hier Passwort eingeben">
+	            	```
+	            	<input type="password" placeholder="Hier Passwort eingeben">
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Button
+	            	```html
+	            	<button>Klick Mich!</button>
+	            	```
+	            	<button>Klick Mich!</button>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Checkbox
+	            	```html
+	            	<input type="checkbox">A
+	            	<input type="checkbox">B
+	            	<input type="checkbox">C
+	            	```
+	            	<input type="checkbox">A
+	            	<input type="checkbox">B
+	            	<input type="checkbox">C
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Radiobox
+	            	```html
+	            	<input type="radio" name="geschlecht">Männlich
+	            	<input type="radio" name="geschlecht">Weiblich
+	            	```
+	            	<input type="radio" name="geschlecht">Männlich
+	            	<input type="radio" name="geschlecht">Weiblich
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Drop-Down Liste
+	            	```html
+<select>
+  <option>Blau</option>
+  <option>Grün</option>
+  <option>Gelb</option>
+</select>
+	            	```
+								<select>
+									<option>Blau</option>
+									<option>Grün</option>
+									<option>Gelb</option>
+								</select>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Containerelemente
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Liste
+	            	```html
+<ul>
+  <li>Marie</li>
+  <li>Peter</li>
+  <li>Klaus</li>
+</ul>
+	            	```
+	            	<ul>
+									<li>Marie</li>
+									<li>Peter</li>
+									<li>Klaus</li>
+								</ul>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Nummerierte Liste
+	            	```html
+<ol>
+  <li>Marie</li>
+  <li>Peter</li>
+  <li>Klaus</li>
+</ol>
+	            	```
+	            	<ol>
+									<li>Marie</li>
+									<li>Peter</li>
+									<li>Klaus</li>
+								</ol>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Formular
+	            	```html
+<form>
+  <input type="text" name="benutzername" placeholder="Benutzername">
+  <input type="password" name="passwort" placeholder="Passwort">
+  <button>Anmelden</button>
+</form>
+	            	```
+	            	<form>
+									<input type="text" name="benutzername" placeholder="Benutzername">
+									<input type="password" name="passwort" placeholder="Passwort">
+									<button>Anmelden</button>
+								</form>
+	            </script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Blöcke
+	            	Es können Elemente in Blöcke zusammengefasst werden. 
+	            	```html
+<div>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+  <a href="http://www.google.de">Link zu Google</a>
+</div>
+	            	```
+	            	<div>
+									<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+									<a href="http://www.google.de">Link zu Google</a>
+								</div>
+							</script>
+            </section>
+
+            <section data-markdown>
+            	<script type="text/template">
+	            	# Aufgabe
+	            	Auf [CodePen](http://codepen.io/pen/) ein Registrierungsformular für eine Website erstellen, mit:
+	            	* Überschrift
+	            	* Firmenlogo
+	            	* Eingabe von Vorname, Nachname, Passwort und Auswahl des Geschlechts
+	            	* Checkbox zum Abonnieren des Newsletters (Ja/Nein)
+	            	* Buttom zum Registrieren
+							</script>
+            </section>
+
+            <!--<section><pre><code data-trim data-noescape>
+(def lazy-fib
+  (concat
+   [0 1]
+   <mark>((fn rfib [a b]</mark>
+        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+    </code></pre></section>-->
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }]
+    });
+    </script>
+</body>
+
+</html>
